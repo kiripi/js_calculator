@@ -15,7 +15,7 @@ body {
 /* operation display */
 
 .calculator-container {
-  box-shadow: rgb(0, 0, 0, 0.5) 5px 15px 20px;
+  box-shadow: 5px 15px 20px rgb(0, 0, 0, 0.5);
   height: 60vh;
   width: 450px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .number,
-.operator {
+.sign {
   font-size: 1.3em;
 }
 
@@ -50,6 +50,7 @@ body {
   height: 80%;
   gap: 3px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .button-panel button {
