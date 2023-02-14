@@ -16,7 +16,7 @@ let result = "";
 function changeNumber() {
   if (this.textContent === "." && secondNumber.innerHTML.includes(".")) return;
   if (this.textContent === "." && secondNumber.innerHTML === "")
-    return (secondNumber.innerHTML = "0.0");
+    return (secondNumber.innerHTML = "0.");
   secondNumber.innerHTML += this.textContent;
 }
 
