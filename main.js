@@ -21,12 +21,18 @@ function changeNumber() {
 }
 
 function operate() {
+  if (secondNumber.innerHTML === "" && this.textContent === "-") {
+    secondNumber.innerHTML = "-";
+    return;
+  }
   firstNumber.innerHTML = secondNumber.innerHTML;
   operatorSign.innerHTML = this.textContent;
   secondNumber.innerHTML = "";
 }
 
 function showResult() {
+  if (firstNumber.innerHTML === "" || secondNumber.innerHTML === "") return;
+
   let x = Number(secondNumber.innerHTML);
   let y = Number(firstNumber.innerHTML);
   let operator = operatorSign.innerHTML;
